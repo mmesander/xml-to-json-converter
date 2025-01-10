@@ -29,4 +29,6 @@ public class Notes {
     // -- Methode in de service laag toevoegen om het output java object om te zetten naar een json string
 
     // 7. Unit tests schrijven zodra alles werkt!
+
+    // 8. Controllers/Exceptions uitzoeken?
 }

@@ -7,14 +7,13 @@ public class Notes {
 
     // 1. Vooraf:
     // Uitzoeken welke libraries er nodig zijn:
-    // -- Inlezen XML, converteren van XML naar JSON (json.org?), unit testing (junit)
-    // -- Structuur van het project opzetten (controllers, dtos, exceptions, helpers, services)
+    // -- Inlezen XML (zit inbegrepen bij JDK), converteren van Java naar JSON (Jackson), unit testing (junit)
+    // -- Structuur van het project opzetten (controllers?, dtos, exceptions?, helpers, services)
 
     // 2. Opzetten nieuw maven Project
     // Here we are =)
 
     // 3. Inlezen xml voorbeeld bestand naar java objecten
-    // -- Library voor inlezen XML in de dependencies zetten en maven laten reloaden
     // -- Gelijk maar even Lombok in de pom.xml toevoegen, als die een keer fatsoenlijk werkt tenminste =(
     // -- Zelf een XML bestand aanmaken
     // -- InputDto aanmaken (die het xml bestand kan inlezen?)

@@ -1,4 +1,4 @@
-package nl.mesander.dtos;
+package nl.mesander.dtos.input;
 
 // Imports
 import jakarta.xml.bind.annotation.XmlElement;

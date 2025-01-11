@@ -1,5 +1,6 @@
 package nl.mesander.services;
 
+// Imports
 import nl.mesander.dtos.input.EmployeeInputDto;
 import nl.mesander.dtos.output.EmployeeDto;
 import org.junit.jupiter.api.AfterEach;
@@ -9,8 +10,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class EmployeeServiceTest {
-    private EmployeeService employeeService;
-
     EmployeeInputDto mockEmployeeInputDto;
     EmployeeDto mockEmployeeDto;
     String testFileLocation;

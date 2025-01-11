@@ -1,6 +1,6 @@
 <Employee>
-    <Name>Mark Mesander</Name>
-    <Function>Junior Java Developer</Function>
-    <Company>Copernicus</Company>
-    <ToHire>Yes</ToHire>
+    <name>Mark Mesander</name>
+    <function>Junior Java Developer</function>
+    <company>Copernicus</company>
+    <toHire>Yes</toHire>
 </Employee>

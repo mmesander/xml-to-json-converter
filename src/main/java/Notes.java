@@ -7,7 +7,7 @@ public class Notes {
 
     // 1. Vooraf:
     // Uitzoeken welke libraries er nodig zijn:
-    // -- Inlezen XML (zit inbegrepen bij JDK), converteren van Java naar JSON (Jackson), unit testing (junit)
+    // -- Inlezen XML (zit niet meer inbegrepen bij SDK, twee dependencies nodig van jaxb), converteren van Java naar JSON (Jackson), unit testing (junit)
     // -- Structuur van het project opzetten (controllers?, dtos, exceptions?, helpers, services)
 
     // 2. Opzetten nieuw maven Project

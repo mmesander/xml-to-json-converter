@@ -16,7 +16,7 @@ public class Notes {
     // 3. Inlezen xml voorbeeld bestand naar java objecten
     // -- Gelijk maar even Lombok in de pom.xml toevoegen, als die een keer fatsoenlijk werkt tenminste =(
     // -- Zelf een XML bestand aanmaken
-    // -- InputDto aanmaken (die het xml bestand kan inlezen?)
+    // -- InputDto aanmaken (die het xml bestand kan inlezen)
 
     // 4. Opzetten output java objecten
     // -- OutputDto aanmaken
@@ -30,5 +30,8 @@ public class Notes {
 
     // 7. Unit tests schrijven zodra alles werkt!
 
-    // 8. Controllers/Exceptions uitzoeken?
+    // Vragen David
+    // Wel of niet spring integreren
+    // Wel of niet controllers integreren
+    // Wel of niet exceptions integreren
 }

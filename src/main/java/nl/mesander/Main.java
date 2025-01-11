@@ -1,17 +1,54 @@
 package nl.mesander;
 
+import nl.mesander.dtos.input.EmployeeInputDto;
+import nl.mesander.dtos.output.EmployeeDto;
+
+import static nl.mesander.services.EmployeeService.*;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        String fileLocation = "src/main/resources/Employee.xml";
+        EmployeeInputDto employeeInputDto = xmlToJava(fileLocation);
+        EmployeeDto employeeDto = null;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+
+
+        if (employeeInputDto != null) {
+            System.out.println("XML naar Java: ");
+            System.out.println(employeeInputDto.getName());
+            System.out.println(employeeInputDto.getFunction());
+            System.out.println(employeeInputDto.getCompany());
+            System.out.println(employeeInputDto.getToHire());
+            System.out.println("------------------");
+            System.out.println(" ");
+        } else {
+            System.out.println("Employee not found for transfer xml to java");
+            System.out.println("------------------");
+            System.out.println(" ");
+        }
+
+        if (employeeInputDto != null) {
+            employeeDto = employeeToDto(employeeInputDto);
+            System.out.println("Input naar output: ");
+            System.out.println(employeeDto.getName());
+            System.out.println(employeeDto.getFunction());
+            System.out.println(employeeDto.getCompany());
+            System.out.println(employeeDto.getIsHired());
+            System.out.println("------------------");
+            System.out.println(" ");
+        } else {
+            System.out.println("Employee not found for transfer input to output");
+            System.out.println("------------------");
+            System.out.println(" ");
+        }
+
+        if (employeeDto != null) {
+            String jsonString = javaToJson(employeeDto);
+            System.out.println("Json string: ");
+            System.out.println(jsonString);
+            System.out.println("------------------");
+            System.out.println(" ");
         }
     }
 }
